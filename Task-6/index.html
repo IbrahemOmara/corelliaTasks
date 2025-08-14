@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تتبع المصاريف</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        padding: 20px;
+        direction: rtl;
+        }
+        .container {
+        max-width: 400px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 { text-align: center; }
+        input, select, button{
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        }
+        input{
+            width: 94%;
+        }
+
+        #addBtn{
+        background-color: #fff;
+        border: dashed 1px rgb(6, 150, 13);
+        color: rgb(6, 150, 13);
+        cursor: pointer;
+        }
+
+        #addBtn:hover{
+        background-color: #06960d;
+        border: dashed 1px #06960d;
+        color: #fff;
+        }
+
+        ul button{
+        width: 20%;
+        padding: 10px;
+        margin: 5px 0;
+        background-color: #fff;
+        border: dashed 1px red;
+        color: red;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+        ul button:hover{
+        background-color: red;
+        border: dashed 1px red;
+        color: rgb(255, 255, 255);
+        }
+
+        ul { list-style: none; padding: 0; }
+        li {
+        background: #eee;
+        margin: 5px 0;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        }
+        .income { color: green; }
+        .expense { color: red; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>تتبع المصاريف</h2>
+    
+    <input type="number" id="amount" placeholder="أدخل المبلغ">
+    <select id="type">
+        <option value="income">دخل</option>
+        <option value="expense">مصروف</option>
+    </select>
+    <button id="addBtn">إضافة</button>
+
+    <h3>القائمة</h3>
+    <ul id="list"></ul>
+
+    <h3>الإجمالي: <span id="total">0</span> جنيه</h3>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

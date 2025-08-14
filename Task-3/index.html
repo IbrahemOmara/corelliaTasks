@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الميك أب و الفساتين</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #faeff4;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #b30059 !important;
+        }
+        .container{
+            gap:50%;
+        }
+        .pink{
+            background-color: #f43896;
+            border-color: #f43896;
+            color: #ffff;
+        }
+        .pink:hover{
+            background-color: #cf076b;
+            border-color: #cf076b;
+            color: #ffff;
+        }
+        .card img {
+            max-height: 250px;
+            object-fit: cover;
+        }
+        .carousel-item img{
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="#">✨ Glam & Dress ✨</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">الفساتين</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">الميك أب</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Carousel -->
+<div id="mainCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./images/12.jpg" class="d-block w-100" alt="فساتين">
+            <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                <h5>أفضل منتجات الميك أب</h5>
+                <p>جودة عالية وإطلالة ساحرة</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="./images/dress4.jpg" class="d-block w-100" alt="ميك أب">
+            <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                <h5>أجمل فساتين السهرة</h5>
+                <p>استأجري فستانك المفضل بأسعار مميزة</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- Products Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">منتجاتنا</h2>
+    <div class="row g-4">
+
+        <!-- Product Card -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="./images/dress1.jpg" class="card-img-top" alt="فستان أحمر">
+                <div class="card-body text-center">
+                    <h5 class="card-title">فستان سهرة ابيض</h5>
+                    <p class="text-muted">2000 جنيه / اليوم</p>
+                    <a href="#" class="btn  pink">إضافة للسلة</a>
+                    <a href="#" class="btn btn-outline-secondary">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="./images/dress2.jpg" class="card-img-top" alt="فستان أحمر">
+                <div class="card-body text-center">
+                    <h5 class="card-title">فستان ازرق ملكي  </h5>
+                    <p class="text-muted">1000 جنيه / اليوم</p>
+                    <a href="#" class="btn  pink">إضافة للسلة</a>
+                    <a href="#" class="btn btn-outline-secondary">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="./images/dress3.jpg" class="card-img-top" alt="فستان أحمر">
+                <div class="card-body text-center">
+                    <h5 class="card-title">فستان سهرة ابيض</h5>
+                    <p class="text-muted">3000 جنيه / اليوم</p>
+                    <a href="#" class="btn  pink">إضافة للسلة</a>
+                    <a href="#" class="btn btn-outline-secondary">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="./images/dress5.jpg" class="card-img-top" alt="فستان أحمر">
+                <div class="card-body text-center">
+                    <h5 class="card-title">فستان سهرة كريمي</h5>
+                    <p class="text-muted">5000 جنيه / اليوم</p>
+                    <a href="#" class="btn  pink">إضافة للسلة</a>
+                    <a href="#" class="btn btn-outline-secondary">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+
+                <!-- Product Card -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="./images/5.jpg" class="card-img-top" alt="ميك أب">
+                <div class="card-body text-center">
+                    <h5 class="card-title">طقم ميك أب كامل</h5>
+                    <p class="text-muted">5000 جنيه</p>
+                    <a href="#" class="btn pink">إضافة للسلة</a>
+                    <a href="#" class="btn btn-outline-secondary">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="./images/10.jpg" class="card-img-top" alt="ميك أب">
+                <div class="card-body text-center">
+                    <h5 class="card-title"> روج بينك مميز  </h5>
+                    <p class="text-muted">800 جنيه</p>
+                    <a href="#" class="btn pink">إضافة للسلة</a>
+                    <a href="#" class="btn btn-outline-secondary">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="./images/11.jpg" class="card-img-top" alt="ميك أب">
+                <div class="card-body text-center">
+                    <h5 class="card-title"> فونديشن فرشاه </h5>
+                    <p class="text-muted">800 جنيه</p>
+                    <a href="#" class="btn pink">إضافة للسلة</a>
+                    <a href="#" class="btn btn-outline-secondary">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="./images/9.jpg" class="card-img-top" alt="فستان أزرق">
+                <div class="card-body text-center">
+                    <h5 class="card-title"> روج الوان متعدده فريده  </h5>
+                    <p class="text-muted">1500 جنيه </p>
+                    <a href="#" class="btn pink">إضافة للسلة</a>
+                    <a href="#" class="btn btn-outline-secondary">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>جميع الحقوق محفوظة © 2025 | Glam & Dress</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

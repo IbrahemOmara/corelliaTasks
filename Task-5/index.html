@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>To-Do List مع JS - مثال عملي</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            
+        }
+        .container{
+            padding: 50px;
+            width: 60%;
+            height: 95vh;
+            background-color: rgb(186, 227, 244);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .add-filed{
+            font-size: 50px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .add-filed input{
+            padding: 15px 50px;
+            border-radius: 20px;
+            border-style: none;
+            font-size: 20px;
+        }
+        .add-filed button{
+            padding: 15px 20px;
+            border-radius: 20px;
+            border-style: none;
+            background-color: antiquewhite;
+        }
+        button:hover{
+            background-color: rgb(243, 200, 143);
+        }
+
+        ul{
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 10px;
+            justify-content: center;
+            width: 70%;
+            align-items: flex-start;
+        }
+        li button{
+            padding: 3px 5px;
+            border-radius: 10px;
+            margin-right:20px;
+            color: #ff0000;
+            background-color: white;
+            border: dashed 1px  red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>قائمة المهام اليومية</h2>
+        <div class="add-filed">
+            <input type="text" id="taskInput" placeholder="أضف مهمة..." />
+            <button id="addBtn">أضف</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+    
+    <script src="script.js">
+    </script>
+</body>
+</html>
